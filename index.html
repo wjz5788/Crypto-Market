@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Crypto Market OS：个人公开市场认知账本、机会队列、预测与复盘。">
+  <title>Crypto Market OS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="mark">CM</span>
+    <div><b>Crypto Market OS</b><small>Stay in the market. Build a model.</small></div>
+  </div>
+  <nav>
+    <a href="#market">市场</a>
+    <a href="#queue">机会</a>
+    <a href="#positions">仓位</a>
+    <a href="#journal">日志</a>
+    <a href="#rules">规则</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">PERSONAL MARKET INTELLIGENCE · v0.1</div>
+  <h1>不是预测所有东西。<br><span>只记录什么值得让我行动。</span></h1>
+  <p>文章保存过去，看板描述现在，预测和交易记录负责证明我到底有没有进步。</p>
+
+  <div class="meta">
+    <div><small>当前模式</small><strong>下跌期 / 强势筛选</strong></div>
+    <div><small>最后更新</small><strong>2026-09-11</strong></div>
+    <div><small>真实持仓</small><strong>仅记录已确认交易</strong></div>
+  </div>
+</section>
+
+<section id="market" class="panel">
+  <div class="head">
+    <div><span>01 / MARKET</span><h2>市场温度</h2></div>
+    <p>市场下跌时不捞最弱的币。先看谁抗跌，谁最先重新获得真实买盘。</p>
+  </div>
+
+  <div id="prices" class="cards"></div>
+
+  <div class="three">
+    <div><b>01</b><p>大盘下跌时，谁跌得最少？</p></div>
+    <div><b>02</b><p>大盘企稳时，谁第一个反弹？</p></div>
+    <div><b>03</b><p>谁出现了新的真实买家，而不是只有“好消息”？</p></div>
+  </div>
+</section>
+
+<section id="queue" class="panel">
+  <div class="head">
+    <div><span>02 / OPPORTUNITY QUEUE</span><h2>机会队列</h2></div>
+    <p>WATCH / RESEARCH / WAIT 不是买入指令，只有触发条件满足并由我确认后才进入真钱仓位。</p>
+  </div>
+  <div id="queueRows"></div>
+</section>
+
+<section class="split">
+  <section id="positions" class="panel">
+    <div class="head"><div><span>03 / POSITIONS</span><h2>真钱仓位</h2></div></div>
+    <div class="empty">
+      <b>EMPTY</b>
+      <h3>暂未录入</h3>
+      <p>只有明确确认的买入、成本、数量才写进这里。研究候选不会伪装成持仓。</p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="head"><div><span>04 / PREDICTIONS</span><h2>预测账本</h2></div></div>
+    <div class="empty">
+      <b>START CLEAN</b>
+      <h3>从可结算预测开始</h3>
+      <p>每条预测必须写方向、时间窗、失效条件和最终结果。</p>
+    </div>
+  </section>
+</section>
+
+<section id="journal" class="panel">
+  <div class="head">
+    <div><span>05 / JOURNAL</span><h2>在场日志</h2></div>
+    <a href="articles/index.html">查看全部 ↗</a>
+  </div>
+  <a class="article" href="articles/2026-09-11-day-1.html">
+    <div>
+      <small>DAY 001 · 2026-09-11</small>
+      <h3>我要开始真正认识这个市场</h3>
+      <p>过去最大的错误，可能不是失败，而是每一次失败之后都重新换一个游戏。</p>
+    </div>
+    <strong>↗</strong>
+  </a>
+</section>
+
+<section id="rules" class="panel">
+  <div class="head">
+    <div><span>06 / RULES</span><h2>系统规则</h2></div>
+    <p>规则不跟着今天的情绪变化。</p>
+  </div>
+  <div class="rules">
+    <div><b>01</b><h3>真实买家优先</h3><p>Distribution ≠ Demand，最后必须落到净买盘。</p></div>
+    <div><b>02</b><h3>相对强度优先</h3><p>下跌看抗跌，反弹看谁最先恢复。</p></div>
+    <div><b>03</b><h3>研究必须有触发条件</h3><p>每个候选都写清楚什么发生以后才行动。</p></div>
+    <div><b>04</b><h3>没有批准，不交易</h3><p>AI 负责研究和排序，资金动作由用户明确确认。</p></div>
+    <div><b>05</b><h3>避免毁灭性亏损</h3><p>先保证还留在游戏里，再等重尾世界里的大机会。</p></div>
+    <div><b>06</b><h3>每个判断都结算</h3><p>READY、NO TRADE、错过和错误都要留下结果。</p></div>
+  </div>
+</section>
+
+<footer>
+  <b>Crypto Market OS</b>
+  <p>公开的是认知，不是表演。仅用于个人研究记录。</p>
+</footer>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
